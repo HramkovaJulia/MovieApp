@@ -1,8 +1,14 @@
-# DrawApp
+# MovieApp
 
-- Обработка событий прикосновений и жестов
-- Работа с анимацией
+- Динамическое расположение сложные вью
+- SnapKit, Alamofire, Kingfisher, VIPER
+- Клиент-серверное взаимодействие 
 
 -->
+<p align="center">
+<img src="https://user-images.githubusercontent.com/106964404/234773075-7ff2d46a-ce91-4b69-8864-1a885436c74b.png" width="18%">
+<img src="https://user-images.githubusercontent.com/106964404/234773084-6ad08165-5a1c-42ae-a586-e0a0612e9398.png" width="18%">
+<img src="https://user-images.githubusercontent.com/106964404/234773099-7193b5dc-a376-4ae2-9bf4-514318f19cc4.png" width="18%">
+<img src="https://user-images.githubusercontent.com/106964404/234773125-020c155d-85d9-4e75-ae72-03ef1241f6e2.png" width="18%">
 
-<img width="251" alt="Снимок экрана 2023-02-17 в 11 31 02" src="https://user-images.githubusercontent.com/106964404/219559715-6ee26f5a-5695-487b-9244-880cdeb53ee6.png">  | <img width="247" alt="Снимок экрана 2023-02-17 в 11 30 33" src="https://user-images.githubusercontent.com/106964404/219559729-b7e06da6-8010-43ba-a568-50a0a374c8cc.png">
+</p>
