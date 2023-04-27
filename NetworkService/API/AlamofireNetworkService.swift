@@ -87,7 +87,7 @@ class AlamofireNetworkService {
         }
     }
     
-    func loadCastDetails(with id: Int, completion: ((CastDetailEntity) -> (Void))?) {
+    func loadCastDetails(with id: Int, completion: (([CastDetailEntity]) -> (Void))?) {
         let url = self.baseUrl + "/3/person/\(id)"
         let parameters: Parameters = ["api_key": self.API_KEY]
         self.session.request(url, method: .get, parameters: parameters).validate().responseData { response in
@@ -98,7 +98,7 @@ class AlamofireNetworkService {
                 do {
                     let actor = try decoder.decode(CastDetailEntity.self, from: data)
                     DispatchQueue.main.async {
-                        completion?(actor)
+                        completion?([actor])
                     }
                 } catch {
                     print("error")
@@ -110,7 +110,7 @@ class AlamofireNetworkService {
     }
     func getMovieDetails(
         with id: Int,
-        completion: ((MovieDetailsResponse) -> (Void))?
+        completion: (([MovieDetailsResponse]) -> (Void))?
     ) {
         let url = self.baseUrl + "/3/movie/\(id)"
         let parameters: Parameters = ["api_key": self.API_KEY]
@@ -124,7 +124,7 @@ class AlamofireNetworkService {
                     let movieDetailResponse = try
                     decoder.decode(MovieDetailsResponse.self, from: data)
                     DispatchQueue.main.async {
-                        completion?(movieDetailResponse)
+                        completion?([movieDetailResponse])
                     }
                 } catch {
                     print("неудалось распарсить JSON")
